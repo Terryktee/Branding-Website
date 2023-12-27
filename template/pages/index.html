@@ -1,0 +1,52 @@
+{%load static%}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">   
+  
+     <nav class="nav-area">
+            <div class="logo">
+              <span class="typed1"></span>
+            </div>
+
+            <ul class="menu-area">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="welcome-text">
+            <h2 class="heading"><span class="typed2"></span> Online Shop  </h2>
+			<p ><span class="typed3"></span></p>
+			<div class="btn-align">
+				<a type="button" class="btn btn-primary" href="{% url 'Genesis:index' %}">Gnesis Gear</a>
+			</div>
+        </section>
+
+        <script src="{% static 'js/typed.js' %}"></script>
+        <script>
+            var typed = new Typed(".typed2", {
+                strings: [
+                    "Genesis Gear",
+                    "WELCOME"
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        
+             var typed = new Typed(".typed1", {
+                strings: [
+                    "Genesis Gear"
+                ],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        
+            var typed = new Typed(".typed3", {
+                strings: [
+                    "Style is something each of us already have, all we need to do is find it"
+                ],
+                typeSpeed: 20,
+                backSpeed: 0,
+                loop: true
+            });
+        </script>
